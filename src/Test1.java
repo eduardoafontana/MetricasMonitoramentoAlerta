@@ -1,0 +1,14 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class Test1 {
+
+	@Test
+	public void testMetrica() {
+		Metrica metrica = new Metrica();
+		assertNotNull(metrica);
+	}
+
+}
