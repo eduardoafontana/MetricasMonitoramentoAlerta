@@ -35,9 +35,8 @@ public class Metrica extends Observable {
 		return medicoes.get(medicoes.size() - 1);
 	}
 	
-	public boolean novaMedicao(){
-		Medicao medicao = new Medicao();
-		
+	public boolean novaMedicao(int valor){
+		Medicao medicao = new Medicao(valor);
 		adicionarMedicao(medicao);
 		
 		setChanged();

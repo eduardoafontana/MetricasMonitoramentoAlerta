@@ -1,4 +1,8 @@
 
-public class Tipo {
-
+public enum Tipo {
+	EspacoEmDisco,
+	CPU,
+	TempoResposta,
+	Memoria,
+	CargaDeRede
 }

@@ -11,7 +11,10 @@ public class Alerta implements Observer {
 	
 	@Override
 	public void update(Observable obj, Object arg) {
-		mensagem = "OK";
+		
+		Medicao medicao = (Medicao)arg;
+		
+		mensagem = "Alerta medição valor: " + medicao.getValor();
 	}
 
 }
